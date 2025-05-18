@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    padding: 30px;
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.screen,
+.back-btn {
+    display: none;
+}
+
+.back-btn:not(.hidden) {
+    display: inline;
+}
+
+.screen:not(.hidden) {
+    display: block;
+}
+
+button,
+input[type=submit] {
+    padding: 12px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    min-width: 200px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.category-btn {
+    width: 80%;
+    background-color: #007bff;
+    color: white;
+}
+
+.category-btn:hover {
+    background-color: #0056b3;
+}
+
+.set-btn,
+.add-btn,
+.submit-btn,
+.submit-qstn,
+#add-qstn-btn,
+#add-question-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.set-btn:hover,
+.add-btn:hover,
+.del-btn:hover,
+#add-qstn-btn:hover,
+#add-question-btn:hover {
+    background-color: #1e7e34;
+    transform: scale(1.02);
+}
+
+.back-btn {
+    background-color: #6c757d;
+    color: white;
+}
+
+.back-btn:hover {
+    background-color: #495057;
+}
+
+#add-question-screen,
+#set-questions-screen,
+#category-screen {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#add-question {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+label {
+    text-align: left;
+    font-weight: bold;
+}
+
+textarea,
+input[type="number"] {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+#confirm-msg {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #28a745;
+}
+
+#set-questions-screen h1, h2, p {
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    button,
+    input[type=submit] {
+        width: 100%;
+        min-width: unset;
+    }
+
+    #add-question-screen {
+        width: 100%;
+        padding: 15px;
+    }
+}
