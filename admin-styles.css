@@ -63,8 +63,7 @@ input[type=submit] {
 }
 
 .set-btn:hover,
-.add-btn:hover,
-.del-btn:hover,
+.add-btn:hover
 #add-qstn-btn:hover,
 #add-question-btn:hover {
     background-color: #1e7e34;
@@ -94,6 +93,7 @@ input[type=submit] {
 
 #add-question {
     display: flex;
+    max-width: 600px;
     flex-direction: column;
     gap: 16px;
     width: 100%;
@@ -123,6 +123,35 @@ input[type="number"] {
     padding: 20px;
 }
 
+#add-question-screen button,
+#add-question-screen input[type="submit"] {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    align-self: center;
+}
+
+#add-question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+#set-questions-screen form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+#set-questions-screen input[type="submit"],
+#set-questions-screen input[type="number"] {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
 @media (max-width: 768px) {
     body {
         padding: 20px;
@@ -134,12 +163,25 @@ input[type="number"] {
 
     button,
     input[type=submit] {
+        max-width: 100%;
         width: 100%;
         min-width: unset;
     }
 
     #add-question-screen {
-        width: 100%;
         padding: 15px;
     }
+
+    #add-question-screen button,
+    #add-question-screen input[type="submit"],
+    #set-questions-screen input[type="submit"], 
+    #set-questions-screen input[type="number"] {
+        width: 100%;
+    }
+
+    #set-questions-screen label {
+    text-align: center;
+    font-weight: bold;
+    }
+
 }
