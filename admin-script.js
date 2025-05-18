@@ -35,15 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".category-btn").forEach(button => {
         button.addEventListener("click", () => {
             const category = button.getAttribute("data-category");
-            const categoryObj = {
-                javascript: "JavaScript",
-                backend: "Backend",
-                databases: "Databases",
-                ai: "Artificial Intelligence"
-            }
-            if (categoryObj[category]) {
-                categoryTitle.textContent = categoryObj[category];
-            }
+            categoryTitle.textContent = category;
             categoryScreen.classList.add("hidden");
             optionsScreen.classList.remove("hidden");
             backBtn.classList.remove("hidden");
