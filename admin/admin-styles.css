@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    padding: 30px;
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.screen,
+.back-btn {
+    display: none;
+}
+
+.back-btn:not(.hidden) {
+    display: inline;
+}
+
+.screen:not(.hidden) {
+    display: block;
+}
+
+button,
+input[type=submit] {
+    padding: 12px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    min-width: 200px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.back-btn {
+    padding: 12px 20px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.category-btn {
+    width: 80%;
+}
+
+.set-btn,
+.add-btn,
+.submit-btn,
+.submit-qstn,
+.category-btn,
+#add-qstn-btn,
+#add-question-btn {
+    background-color: #1976d2;
+    color: white;
+}
+
+.set-btn:hover,
+.add-btn:hover,
+#add-qstn-btn:hover,
+#add-question-btn:hover,
+.category-btn:hover {
+    background-color: #135ba1;
+    transform: scale(1.02);
+}
+
+.back-btn:hover {
+    background-color: #495057;
+}
+
+#add-question-screen,
+#set-questions-screen,
+#category-screen {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+label {
+    font-weight: bold;
+}
+
+textarea,
+input[type="number"] {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+#confirm-msg {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #28a745;
+}
+
+#set-questions-screen h1, h2, p {
+    padding: 20px;
+}
+
+#add-question-screen button,
+#add-question-screen input[type="submit"],
+#set-questions-screen input[type="submit"] {
+    width: 100%;
+    box-sizing: border-box;
+    align-self: center;
+}
+
+#add-question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    max-width: 600px;
+}
+
+#set-questions-screen form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+#set-questions-screen input[type="submit"],
+#set-questions-screen input[type="number"] {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    button,
+    input[type=submit] {
+        max-width: 100%;
+        width: 100%;
+        min-width: unset;
+    }
+
+    #add-question-screen {
+        padding: 15px;
+    }
+
+    #add-question-screen button,
+    #add-question-screen input[type="submit"],
+    #set-questions-screen input[type="submit"], 
+    #set-questions-screen input[type="number"] {
+        width: 100%;
+    }
+
+    #set-questions-screen label {
+    text-align: center;
+    font-weight: bold;
+    }
+
+}
