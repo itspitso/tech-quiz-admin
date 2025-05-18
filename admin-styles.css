@@ -61,29 +61,25 @@ input[type=submit] {
 
 .category-btn {
     width: 80%;
-    background-color: #007bff;
-    color: white;
-}
-
-.category-btn:hover {
-    background-color: #0056b3;
 }
 
 .set-btn,
 .add-btn,
 .submit-btn,
 .submit-qstn,
+.category-btn,
 #add-qstn-btn,
 #add-question-btn {
-    background-color: #28a745;
+    background-color: #1976d2;
     color: white;
 }
 
 .set-btn:hover,
 .add-btn:hover,
 #add-qstn-btn:hover,
-#add-question-btn:hover {
-    background-color: #1e7e34;
+#add-question-btn:hover,
+.category-btn:hover {
+    background-color: #135ba1;
     transform: scale(1.02);
 }
 
