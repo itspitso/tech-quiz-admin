@@ -104,7 +104,6 @@ input[type=submit] {
 }
 
 label {
-    text-align: left;
     font-weight: bold;
 }
 
@@ -184,10 +183,10 @@ input[type="number"] {
     #set-questions-screen input[type="number"] {
         width: 100%;
     }
-/*
+
     #set-questions-screen label {
     text-align: center;
     font-weight: bold;
-    }*/
+    }
 
 }
